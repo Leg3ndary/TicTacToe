@@ -1,6 +1,5 @@
 import './App.css';
 import { useState } from "react";
-import Board from "./Board.jsx";
 
 function App() {
   let [p1Score, setp1Score] = useState(0);
@@ -24,9 +23,13 @@ function App() {
   return (
     <div className="App">
       <div className="score-board">
-        <h1>Player 1: {p1Score} - Player 2: {p2Score}</h1>
+        <h1>Player 1: {p1Score} Player 2: {p2Score}</h1>
       </div>
-      <Board />
+      <div className="board">
+        <div className="row1">
+          <button className=></button>
+        </div>
+      </div>
       <div className="new-game">
         <button className="new-button" onClick={resetGame}>New Game</button>
       </div>
