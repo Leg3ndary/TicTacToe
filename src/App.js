@@ -27,7 +27,7 @@ function App() {
       </div>
       <div className="board">
         <div className="row1">
-          <button className=></button>
+          <button className="button"></button>
         </div>
       </div>
       <div className="new-game">
