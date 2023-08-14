@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   let [p1Score, setp1Score] = useState(0);
@@ -22,12 +23,15 @@ function App() {
 
   return (
     <div className="App">
+      <Routes>
+        <Route path="/" element={<Element />} />
+      </Routes>
       <div className="score-board">
         <h1>Player 1: {p1Score} Player 2: {p2Score}</h1>
       </div>
       <div className="board">
         <div className="row1">
-          <button className=></button>
+          <button className="something"></button>
         </div>
       </div>
       <div className="new-game">
